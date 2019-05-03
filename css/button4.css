@@ -1,0 +1,113 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	background-color:#8885858f;
+}
+.btn6{
+	height: 3.7em;
+	width:10rem;
+}
+.b6maincont{
+	position:absolute;
+	height: 3rem;
+	width: 10rem;
+	border-radius: 30px;
+	overflow: hidden;
+}
+[class^="b6subcont"]{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 25px;
+}
+.b6subcont1{
+	background-color: #4a22ea;
+	
+}
+.b6subcont2{
+	background-color: #4a22ea;
+	margin-top: 3rem;
+	
+}
+.b6subcont3{
+	background-color:rgba(32,208,12,0.94);
+	margin-top: 6rem;
+}
+.b6afleft{
+	float: left;
+	height: 1.4rem;
+	width: 1.8rem;
+	margin:0rem 0.8rem 0rem 0rem;
+	border-radius: 50%;
+	background-color: white;
+	color: rgba(45,31,169,1.00);
+	display: flex;
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	padding: 0px 0px 8px 0px;;
+}
+.b6bfleft{
+	float: left;
+	height: 1.4rem;
+	width:  1.4rem;
+	margin-right:0.8rem;
+	border-top:solid white 2.5px;
+	border-right:solid white 2.5px;
+	border-bottom:solid transparent 2.5px;
+	border-left: solid transparent 2.5px;
+	border-radius: 25px;
+	background-color: transparent;
+	animation: b6move1 1s linear .2s infinite;
+}
+@keyframes b6move1{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.b6cfleft{
+	float: left;
+	height: 2rem;
+	width:  2rem;
+	margin-right: 0.4rem;
+	background-color: white;
+	border-radius: 50%;
+}
+.b6cfleft .tick{
+	margin-top: 0.9rem;
+	width: 0.7rem;
+	height: 1rem;
+	border-top:solid rgba(32,208,12,0.94) 2px;
+	border-right:solid rgba(32,208,12,0.94) 2px;
+	transform-origin: left top;
+	transform: scaleX(-1) rotate(135deg);
+	margin-left: 0.3rem;
+}
+@keyframes checkmark{
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 0.7rem;
+    opacity: 1;
+  }
+  40% {
+    height: 1rem;
+    width: 0.7rem;
+    opacity: 1;
+  }
+  100% {
+    height: 1rem;
+    width: 0.7rem;
+    opacity: 1;
+  }
+}
